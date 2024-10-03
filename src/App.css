@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+h1 {
+  color: #333;
+}
+
+.start-button,
+.next-button,
+.play-again-button {
+  padding: 15px 25px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px 0;
+}
+
+.start-button:hover,
+.next-button:hover,
+.play-again-button:hover {
+  background-color: #3700b3;
+  transform: translateY(-2px);
+}
+
+.question-container {
+  margin: 20px 0;
+}
+
+.breadcrumbs {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.question {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.option {
+  padding: 15px;
+  border: 2px solid #6200ea;
+  border-radius: 10px;
+  background-color: #e3f2fd;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px 0;
+}
+
+.option:hover {
+  background-color: #bbdefb;
+}
+
+.selected {
+  background-color: #6200ea;
+  color: white;
+  border-color: #3700b3;
+}
+
+.result {
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.result:hover {
+  transform: translateY(-2px);
+}
+
+.result h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.results-row {
+  display: flex;
+  justify-content: space-around; /* Adjusted to space evenly */
+  margin: 20px 0;
+  width: 100%; /* Ensure it takes full width of the container */
+}
+
+.results-row > div {
+  margin: 0; /* Removed margin for a cleaner look */
+  padding: 10px 15px; /* Added padding for better spacing */
+  border: 2px solid #6200ea; /* Add border for emphasis */
+  border-radius: 8px; /* Slightly rounded corners */
+  background-color: #f1f1f1; /* Light background for each result box */
+}
+
+.highlight {
+  font-size: 2.5em; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #6200ea;
+  margin: 10px 0; /* Added margin for spacing */
+}
+
+.motivation {
+  font-size: 1.6em; /* Slightly larger font size */
+  color: #4caf50;
+  margin-top: 20px;
+  font-style: italic; /* Italicized for emphasis */
+}
